@@ -20,21 +20,21 @@ function Header(){
             </div>
             {/* first link*/}
             <div className="header__nav">
-            <Link to  ="/"className="header__link">
+            <Link to  ="/Login"className="header__link">
                 
         <div className="header__option">
         <span className="header__lineone">
              Hello,User
             </span>
             <span className="header__linetwo">
-                <Link to ="./Login">
+            
              Sign 
-             </Link>
+        
             </span>
 
         </div>
         </Link>
-        <Link to  className="header__link">
+        <Link to ="/Orders" className="header__link">
         <div className="header__option">
         <span className="header__lineone">
                 Returns
@@ -44,23 +44,11 @@ function Header(){
 
         </div>
         </Link>
-        <Link to  className="header__link">
-        <div className="header__option">
-        <span className="header__lineone">
-             Your
-            </span>
-            <span className="header__linetwo"> Prime
-            </span>
-
-        </div>
-        </Link>
         </div>
         {/*basket icon with number*/}
-        <Link className="/checkout" className="header__link">
+        <Link to="/checkout" className="header__link">
             <div className="header__optionbasket">
-                <Link to="/Checkout">
                 <ShoppingBasketIcon/>
-                </Link>
 {/*number of items in the basket */}
         <span className="header_optionlinetwo header__productCount">{basket?.length}</span>
             </div>
